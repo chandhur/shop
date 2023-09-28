@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+   font-size: 20px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color:rgb(146, 136, 216);
+    box-shadow: 1px 1px 1px black;
+    animation-name: example1;
+    animation-duration: 5s;
+    position: sticky;
+    top:0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+   
+}
+.main1{
+    text-decoration: none;
+      font-size: 30px;
+    color: rgb(247, 247, 247);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.main2{
+    height: 2.5rem;
+}
+
+a:hover{
+    color:rgb(255, 153, 0);
+    border: 1px solid orange;
+    border-radius: 3px;
+}
+.main3{
+    width: 100%;
+    height: 550px;
+}
+
+.from
+{
+    
+    position:absolute;
+    height: 230px;
+    width: 330px;
+    margin-left: 800px;
+    margin-top: -400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    background-color: rgba(101, 99, 134, 0.5);
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example{
+    0%{background-color: yellow;}
+    40%{box-shadow: 1px 5px 10px black;}
+    50%{background-color: mediumorchid;}
+    70%{box-shadow: 10px 10px 10px black;}
+    100%{background-color: hotpink;}
+}
+@keyframes example1{
+    0%{background-color:skyblue; }
+    40%{box-shadow: 1px 5px 10px black;}
+    50%{background-color: steelblue;}
+    70%{box-shadow:10px 10px 10px 10px black;}
+   
+}
+.body2{
+    height: 250px;
+    width: 300px;
+}
+.body3{
+    font-size: 20px;
+}
+.body1{
+    margin-top: 40px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    background-color: bisque;
+
+}
+.name{
+    font-size: 35px;
+    padding: 10px;
+
+}
+.name1{
+    border: none;
+    border-bottom: 2px solid black;
+    margin-left: 20px;
+    background-color: beige;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.button{
+    border: none;
+    border: 1px solid blue;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.button:hover {
+      background-color:#002ead;
+      transition: 0.7s;
+      color:white;
+  }
+
+  .title
+  {
+   color: black;
+   text-shadow: 0 2px 1px #fff, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+    
+
+  }
