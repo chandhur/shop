@@ -1,0 +1,11 @@
+<div>
+    <h1>{{heading}}</h1>
+    <app-task-from [tasks]="taskList"></app-task-from>
+    <div>
+       <h5>MY-CURRENT-TASK {{ taskList.length}}</h5>
+    </div>
+    <div>
+        <app-task-body [tasks]="taskList"></app-task-body>
+    </div>
+
+</div>
