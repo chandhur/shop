@@ -1,0 +1,45 @@
+<div class="w-full">
+    <div class="w-full bg-gray-100 pb-10" >
+    <div class="w-[350px] mx-auto flex flex-col items-center"  >
+        <img  class="w-32 mt-4" src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/00/92/0260aab44ee8a2faeafde18ee1da/amazon-logo-inverse.svg" alt="logo">
+        <div class="w-full border border-zinc-200 p-6">
+          <h2 class="font-titleFont  text-3xl font-medium mb-4">Sign in</h2>
+          <div class="flex flex-col gap-3">
+             <div class="flex flex-col gap-2">
+                <p class="text-sm font-medium">User name</p>
+                <input type="email" class="w-full lowercase py-1 border border-zinc-400 px-2 rounded-md outline-none focus:focus-within:border-[#e77600] text-base focus-within:shadow-amazonInput duration-100 "  [(ngModel)]="user.name" />
+            </div>
+            <div class="flex flex-col gap-2">
+                <p class="text-sm font-medium">Mobile number</p>
+                <input type="email" class="w-full lowercase py-1 border border-zinc-400 px-2 rounded-md outline-none focus:focus-within:border-[#e77600] text-base focus-within:shadow-amazonInput duration-100 "  [(ngModel)]="user.mobileNumber"  />
+            </div>
+            <div class="flex flex-col gap-2">       
+                <p class="text-sm font-medium">Email</p>
+                <input type="email" class="w-full lowercase py-1 border border-zinc-400 px-2 rounded-md outline-none focus:focus-within:border-[#e77600] text-base focus-within:shadow-amazonInput duration-100 "  [(ngModel)]="user.email"  />
+            </div>
+            <div class="flex flex-col gap-2">
+                <p class="text-sm font-medium">Password</p>
+                <input type="password" class="w-full lowercase py-1 border border-zinc-400 px-2 rounded-md outline-none focus:focus-within:border-[#e77600] text-base focus-within:shadow-amazonInput duration-100 " [(ngModel)]="user.password"  />
+            </div>
+            <button class="w-full py-1.5 text-sm font-normal rounded-lg bg-yellow-400   active:border-yellow-800 active:shadow-amazonInput  hover:bg-opacity-90 mt-3" (click)="onSubmit()"
+              >
+             <!-- <a routerLink="">submit</a> -->
+             submit
+            </button>
+            </div>
+            <p class="text-xs font-medium text-black leading-4 mt-4" >By Continuing, you agree to Amazon's<span class="text-blue-600">Condtions of Use</span><span class="text-blue-600">privcey Notice</span></p>
+        </div>
+    </div>
+    
+    </div>
+    <div class="w-full bg-gradient-to-t from-white via-white to-zinc-200 flex flex-col gap-4 justify-center items-center font-medium py-10">
+     <div class="flex items-center gap-3">
+        <p class="text-xs text-blue-800 hover:text-orange-600 hover:underline cursor-pointer duration-100">Conditions of us<p>
+            <p class="text-xs text-blue-800 hover:text-orange-600 hover:underline cursor-pointer duration-100">policy Notice<p>
+                <p class="text-xs text-blue-800 hover:text-orange-600 hover:underline cursor-pointer duration-100">Help<p>
+    </div> 
+    <p class="text-xs text-gray-600">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </div>
+    </div>
+    <!-- (ngSubmit)="userLogin()" -->
+      <!-- (click)="click($event)" -->

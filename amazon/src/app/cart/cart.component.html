@@ -1,0 +1,48 @@
+
+<app-navbar></app-navbar>
+
+
+<div *ngIf="isCartEmpty(); else cartNotEmpty" class="flex justify-center items-center h-full w-full  font-Poppins">
+    <p class="text-bold font-bold mt-[150px]">Your cart is empty.</p>
+  </div>
+
+  <ng-template #cartNotEmpty>
+    <div class="bg-slate-100  font-Poppins">
+    <div class="flex justify-around">
+        <div>
+        shopping Cart
+        </div>
+        <div>
+            price
+        </div>
+      </div>
+     <div *ngFor="let data of cartItems ;let i=index" class="flex gap-7 container mx-auto mt-6 bg-white rounded-lg">
+        <div >
+        <img src={{data.thumbnail}} class="h-[300px] w-[380px] rounded-lg">
+        </div>
+       
+        <div class="w-[550px]">
+             <div>{{data.description}}</div>
+             <div>{{data.brand}}</div>
+             <div class="text-green-600">In stock</div>
+             <div>{{data.category}}</div>
+              
+        <div class="flex-col grid grid-cols-3 mt-10">
+            <img src={{data.images[i]}} class="h-[100px] w-[100px]"  >
+        </div>
+
+        </div>
+        <div  class="flex">
+            <div><span><button (click)="increment(data.price)">+</button></span>{{70 *data.price}}<span><button (click)="decrement(data.price)">-</button></span></div>
+        </div>
+
+        <button  class="bg-red-300 rounded-lg   h-[50px] w-[80px]" (click)="remove(i)">Remove</button><br>
+        <button class="bg-red-300 rounded-lg   h-[50px] w-[80px]" (click)="payment(data.price)"  >BuyNow</button>
+    </div>
+    </div>
+
+    <div class="border-b-2 bg-gray-700 mt-10"></div>
+    <div>Your Total Amout is {{addValue()}}</div>
+</ng-template>
+ 
+
